@@ -1,14 +1,21 @@
 RuleSet: 3-af-impfungen
 * item[+] insert addGroup(3, Impfungen)
-  * item[+] insert addItem(3.1, #boolean, [[Impfbuch vorgelegt]])
-    * insert addSource(#DE-BY)
   * item[+] insert addItem(3.2, #boolean, [[alle Impfungen werden abgelehnt oder sind nicht möglich]])
     * insert addSource(#DE-BY)
+    * required = true
+    * initial[0].valueBoolean = false
+  * item[+] insert addItem(3.1, #boolean, [[Impfbuch vorgelegt]])
+    * insert addSource(#DE-BY)
+    * insert enableWhenBoolean(3.2, !=, true)
+  * item[+] insert addItem(3.1a, #choice, [[Impfbuch vorgelegt]])
+    * insert addSource(#DE-SL)
+    * insert enableWhenBoolean(3.2, !=, true)
+    * answerValueSet = Canonical(JaNeinVorgelegtVS)
   * item[+] insert addGroup(3_1, Abfrage Impfungen)
     * insert addSource(#DE-BY)
     * insert enableWhenBoolean(3.1, =, true)
-    * insert enableWhenBoolean(3.2, !=, true)
-    * enableBehavior = #all
+    * insert enableWhenCode(3.1a, !=, SaarlandAntwortenCS, 0)
+    * enableBehavior = #any
     * item[+] insert addItem(3.3, #choice, [[Tetanus]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
@@ -57,80 +64,6 @@ RuleSet: 3-af-impfungen
         * answerValueSet = Canonical(SEU_UB_ImpfungenVS)
       * item[+] insert addItemWithSource(3.17g.2, #choice, [[Anzahl der Impfungen]], #DE-HE)
         * answerValueSet = Canonical(SEU_UB_AnzahlVS)
-  * item[+] insert addGroup(3_1a, Abfrage Impfungen - abgelehnt)
-    * insert addSource(#DE-BY)
-    * insert enableWhenBoolean(3.2, =, true)
-    * readOnly = true
-    * item[+] insert addItem(3.3a, #choice, [[Tetanus]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.4a, #choice, [[Diphtherie]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.5a, #choice, [[Pertussis]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.6a, #choice, [[IPV]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.7a, #choice, [[HIB]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.8a, #choice, [[Hepatitis B]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.9a, #choice, [[Masern]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.10a, #choice, [[Mumps]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.11a, #choice, [[Röteln]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.12a, #choice, [[Varizellen]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.13a, #choice, [[Meningokokken]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.14a, #choice, [[Pneumokokken]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.15a, #choice, [[FSME]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
-    * item[+] insert addItem(3.16a, #choice, [[Rotaviren]])
-      * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-      * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
-      * readOnly = true
   * item[+] insert addItem(3.17, #boolean, [[Immunität gegen Varizellen aufgrund durchgemachter Varizellenerkrankung]])
     * insert addSource(#DE-BY)
   * item[+] insert addGroup(3_2, Kontraindikation für Masernimpfung)

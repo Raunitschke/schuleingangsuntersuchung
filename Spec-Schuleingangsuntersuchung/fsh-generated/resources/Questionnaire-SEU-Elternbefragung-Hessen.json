@@ -1,0 +1,3039 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SEU-Elternbefragung-Hessen",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "status": "draft",
+      "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "description": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "expansion": {
+        "timestamp": "2024-03-27T12:20:50+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "nein",
+            "display": "nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "abgeschlossen",
+            "display": "abgeschlossen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "läuft",
+            "display": "läuft z.Zt. Noch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "geplant",
+            "display": "geplant"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "DeuevAnlage8LaenderkennzeichenVS",
+      "status": "draft",
+      "name": "DeuevAnlage8LaenderkennzeichenVS",
+      "title": "DeuevAnlage8LaenderkennzeichenVS",
+      "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
+      "expansion": {
+        "timestamp": "2024-04-04T09:11:28+00:00",
+        "contains": [
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AFG",
+            "display": "Afghanistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ET",
+            "display": "Ägypten"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AX",
+            "display": "Åland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AL",
+            "display": "Albanien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "DZ",
+            "display": "Algerien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AJ",
+            "display": "Amerik.-Jungferninseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AS",
+            "display": "Amerikanisch-Samoa"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AND",
+            "display": "Andorra"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AGO",
+            "display": "Angola"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ANG",
+            "display": "Anguilla"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ANT",
+            "display": "Antigua und Barbuda"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AQU",
+            "display": "Äquatorialguinea"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RA",
+            "display": "Argentinien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AQ",
+            "display": "Argentinische Antarktis",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Australisches Antarktis-Territorium"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Britisches Antarktis-Territorium"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Chilenische Antarktis"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Norwegisches Antarktis-Territorium"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ARM",
+            "display": "Armenien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AW",
+            "display": "Aruba"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HEL",
+            "display": "Ascension",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "St. Helena, Ascension und Tristan da Cunha"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "St. Helena"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Tristan da Cunha"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ASE",
+            "display": "Aserbaidschan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AU",
+            "display": "Ashmore- und Cartierinseln",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Korallenmeerinseln"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ETH",
+            "display": "Äthiopien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "AUS",
+            "display": "Australien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BS",
+            "display": "Bahamas"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BRN",
+            "display": "Bahrain"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BD",
+            "display": "Bangladesch"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BDS",
+            "display": "Barbados"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BY",
+            "display": "Belarus"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "B",
+            "display": "Belgien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BH",
+            "display": "Belize"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "DY",
+            "display": "Benin"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BER",
+            "display": "Bermuda"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BHT",
+            "display": "Bhutan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BOL",
+            "display": "Bolivien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BQ",
+            "display": "Bonaire, Saba, St. Eustatius"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BIH",
+            "display": "Bosnien und Herzegowina"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RB",
+            "display": "Botsuana"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BV",
+            "display": "Bouvetinsel"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BR",
+            "display": "Brasilien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BJ",
+            "display": "Britische Jungferninseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IO",
+            "display": "Britisches Territorium im Indischen Ozean"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BRU",
+            "display": "Brunei Darussalam"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BG",
+            "display": "Bulgarien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HV",
+            "display": "Burkina Faso"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RU",
+            "display": "Burundi"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RCH",
+            "display": "Chile"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CP",
+            "display": "Clipperton"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "COI",
+            "display": "Cookinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CR",
+            "display": "Costa Rica"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CI",
+            "display": "Cote d`Ivoire"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CW",
+            "display": "Curaçao"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "DK",
+            "display": "Dänemark"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "D",
+            "display": "Deutschland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WD",
+            "display": "Dominica"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "DOM",
+            "display": "Dominikanische Republik"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "DSC",
+            "display": "Dschibuti"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EC",
+            "display": "Ecuador"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ES",
+            "display": "El Salvador"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ERI",
+            "display": "Eritrea"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EST",
+            "display": "Estland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SWZ",
+            "display": "Eswatini"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FAL",
+            "display": "Falklandinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FR",
+            "display": "Färöer"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FJI",
+            "display": "Fidschi"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FIN",
+            "display": "Finnland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "F",
+            "display": "Frankreich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TF",
+            "display": "Französische Süd- und Antarktisgebiete"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FG",
+            "display": "Franz.-Guayana"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FP",
+            "display": "Franz.-Polynesien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GAB",
+            "display": "Gabun"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WAG",
+            "display": "Gambia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GEO",
+            "display": "Georgien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GH",
+            "display": "Ghana"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GIB",
+            "display": "Gibraltar"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WG",
+            "display": "Grenada"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GR",
+            "display": "Griechenland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GRO",
+            "display": "Grönland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GUA",
+            "display": "Guadeloupe"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GUM",
+            "display": "Guam"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GCA",
+            "display": "Guatemala"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GG",
+            "display": "Guernsey"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RG",
+            "display": "Guinea"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GUB",
+            "display": "Guinea-Bissau"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GUY",
+            "display": "Guyana"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RH",
+            "display": "Haiti"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HM",
+            "display": "Heard und McDonaldinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HCA",
+            "display": "Honduras"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HKG",
+            "display": "Hongkong"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IND",
+            "display": "Indien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RI",
+            "display": "Indonesien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAN",
+            "display": "Insel Man"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IRQ",
+            "display": "Irak"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IR",
+            "display": "Iran"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IRL",
+            "display": "Irland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IS",
+            "display": "Island"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "IL",
+            "display": "Israel"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "I",
+            "display": "Italien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "JA",
+            "display": "Jamaika"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "J",
+            "display": "Japan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "YEM",
+            "display": "Jemen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "JE",
+            "display": "Jersey"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "JOR",
+            "display": "Jordanien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "YU",
+            "display": "Jugoslawien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KAI",
+            "display": "Kaimaninseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "K",
+            "display": "Kambodscha"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CAM",
+            "display": "Kamerun"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CDN",
+            "display": "Kanada"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KAN",
+            "display": "Kanalinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CV",
+            "display": "Cabo Verde"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KAS",
+            "display": "Kasachstan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "QAT",
+            "display": "Katar"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EAK",
+            "display": "Kenia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KIS",
+            "display": "Kirgisistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KIB",
+            "display": "Kiribati"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CC",
+            "display": "Kokosinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CO",
+            "display": "Kolumbien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KOM",
+            "display": "Komoren"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RCB",
+            "display": "Kongo(-Brazzaville), Republik"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ZRE",
+            "display": "Kongo, Demokratische Republik (ehem. Zaire)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KOR",
+            "display": "Korea, Demokratische Volksrepublik (Nordkorea)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ROK",
+            "display": "Korea, Republik (Südkorea)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KOS",
+            "display": "Kosovo"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "HR",
+            "display": "Kroatien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "C",
+            "display": "Kuba"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "KWT",
+            "display": "Kuwait"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LAO",
+            "display": "Laos"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LS",
+            "display": "Lesotho"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LV",
+            "display": "Lettland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RL",
+            "display": "Libanon"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LB",
+            "display": "Liberia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LAR",
+            "display": "Libyen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "FL",
+            "display": "Liechtenstein"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "LT",
+            "display": "Litauen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "L",
+            "display": "Luxemburg"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAC",
+            "display": "Macau"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RM",
+            "display": "Madagaskar"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MW",
+            "display": "Malawi"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAL",
+            "display": "Malaysia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BIO",
+            "display": "Malediven"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RMM",
+            "display": "Mali"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "M",
+            "display": "Malta"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MA",
+            "display": "Marokko"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAR",
+            "display": "Marshallinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAT",
+            "display": "Martinique"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RIM",
+            "display": "Mauretanien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MS",
+            "display": "Mauritius"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAY",
+            "display": "Mayotte"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MEX",
+            "display": "Mexiko"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MIK",
+            "display": "Mikronesien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MD",
+            "display": "Moldau"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MC",
+            "display": "Monaco"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MON",
+            "display": "Mongolei"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MNE",
+            "display": "Montenegro"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MOT",
+            "display": "Montserrat"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MOZ",
+            "display": "Mosambik"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MYA",
+            "display": "Myanmar"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SWA",
+            "display": "Namibia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NAU",
+            "display": "Nauru"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "UM",
+            "display": "Navassa",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Kleinere Amerikanische Überseeinseln"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NEP",
+            "display": "Nepal"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NKA",
+            "display": "Neukaledonien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NZ",
+            "display": "Neuseeland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NIC",
+            "display": "Nicaragua"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NL",
+            "display": "Niederlande"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NLA",
+            "display": "Niederländische Antillen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RN",
+            "display": "Niger"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WAN",
+            "display": "Nigeria"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NIU",
+            "display": "Niue"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MK",
+            "display": "Nordmazedonien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NMA",
+            "display": "Nördliche Marianen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "NF",
+            "display": "Norfolkinsel"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "N",
+            "display": "Norwegen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MAO",
+            "display": "Oman"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "A",
+            "display": "Österreich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PK",
+            "display": "Pakistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PSE",
+            "display": "Palästinensische Gebiete"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PAL",
+            "display": "Palau"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PA",
+            "display": "Panama"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PNG",
+            "display": "Papua-Neugiunea"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PY",
+            "display": "Paraguay"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PIN",
+            "display": "Pazifische Inseln (Marianen- und Karolineninseln)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PE",
+            "display": "Peru"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RP",
+            "display": "Philippinen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PIT",
+            "display": "Pitcairninseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PL",
+            "display": "Polen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "P",
+            "display": "Portugal"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PRI",
+            "display": "Puerto Rico"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "REU",
+            "display": "Réunion"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RWA",
+            "display": "Ruanda"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RO",
+            "display": "Rumänien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RUS",
+            "display": "Russische Föderation"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "PIE",
+            "display": "Saint Pierre und Miquelon"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SOL",
+            "display": "Salomonen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "Z",
+            "display": "Sambia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WS",
+            "display": "Samoa"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RSM",
+            "display": "San Marino"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "STP",
+            "display": "Sao Tomé und Principe"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SAU",
+            "display": "Saudi-Arabien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "S",
+            "display": "Schweden"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CH",
+            "display": "Schweiz"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SN",
+            "display": "Senegal"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SRB",
+            "display": "Serbien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SCG",
+            "display": "Serbien und Montenegro"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SY",
+            "display": "Seychellen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WAL",
+            "display": "Sierra Leone"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ZW",
+            "display": "Simbabwe"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SGP",
+            "display": "Singapur"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SK",
+            "display": "Slowakei"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SLO",
+            "display": "Slowenien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SP",
+            "display": "Somalia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "E",
+            "display": "Spanien",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Ceuta"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Melilla"
+              },
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Spanische Hoheitsplätze in Nordafrika"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CL",
+            "display": "Sri Lanka"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "BL",
+            "display": "St. Barthélemy"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SCN",
+            "display": "St. Kitts und Nevis"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WL",
+            "display": "St. Lucia"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "MF",
+            "display": "St. Martin (französischer Teil)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SX",
+            "display": "St. Martin (niederländischer Teil)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WV",
+            "display": "St. Vincent und die Grenadinen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ZA",
+            "display": "Südafrika"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SUD",
+            "display": "Sudan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SDN",
+            "display": "Sudan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GS",
+            "display": "Südgeorgien und die südlichen Sandwichinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SSD",
+            "display": "Südsudan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SME",
+            "display": "Suriname"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SD",
+            "display": "Swasiland"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SJ",
+            "display": "Svalbard und Jan Mayen"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "SYR",
+            "display": "Syrien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TAD",
+            "display": "Tadschikistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TWN",
+            "display": "Taiwan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EAT",
+            "display": "Tansania"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "T",
+            "display": "Thailand"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TJ",
+            "display": "China",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Tibet"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "OTI",
+            "display": "Timor-Leste"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TG",
+            "display": "Togo"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TOK",
+            "display": "Tokelau"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TON",
+            "display": "Tonga"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TT",
+            "display": "Trinidad und Tobago"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CHD",
+            "display": "Tschad"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CZ",
+            "display": "Tschechien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TN",
+            "display": "Tunesien"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TR",
+            "display": "Türkei"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TUR",
+            "display": "Turkmenistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TUC",
+            "display": "Turks- und Caicosinseln"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "TUV",
+            "display": "Tuvalu"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EAU",
+            "display": "Uganda"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "UA",
+            "display": "Ukraine"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "H",
+            "display": "Ungarn"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "ROU",
+            "display": "Uruguay"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "USB",
+            "display": "Usbekistan"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "VAN",
+            "display": "Vanuatu"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "V",
+            "display": "Vatikanstadt"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "YV",
+            "display": "Venezuela"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "UAE",
+            "display": "Vereinigte Arabische Emirate"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "USA",
+            "display": "Vereinigte Staaten"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "GB",
+            "display": "Vereinigtes Königreich",
+            "designation": [
+              {
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct"
+                },
+                "value": "Akrotiri und Dhekelia"
+              }
+            ]
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "VN",
+            "display": "Vietnam"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "WF",
+            "display": "Wallis und Futuna"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CX",
+            "display": "Weihnachtsinsel"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "EH",
+            "display": "Westsahara"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "RCA",
+            "display": "Zentralafrikanische Republik"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+            "version": "8.00",
+            "code": "CY",
+            "display": "Zypern"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "GenderDEVS",
+      "status": "draft",
+      "name": "GenderDEVS",
+      "title": "SEU-AF Geschlecht DE",
+      "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
+      "expansion": {
+        "timestamp": "2024-03-30T13:28:00+00:00",
+        "contains": [
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "M",
+            "display": "männlich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "W",
+            "display": "weiblich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "X",
+            "display": "unbekannt"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "D",
+            "display": "divers"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "InfektionsKrankheitVS",
+      "status": "draft",
+      "name": "InfektionsKrankheitVS",
+      "title": "InfektionsKrankheitVS",
+      "description": "InfektionsKrankheitVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:02:42+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "covid_19",
+            "display": "COVID-19"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hand_fuß_mund_krankheit",
+            "display": "Hand-Fuß-Mund-Krankheit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "borreliose",
+            "display": "Borreliose"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hepatitis_b",
+            "display": "Hepatitis B"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hirnhautentzündung",
+            "display": "Hirnhautentzündung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "keuchhusten",
+            "display": "Keuchhusten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "masern",
+            "display": "Masern"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "mumps",
+            "display": "Mumps"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "ringelröten",
+            "display": "Ringelröten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "röteln",
+            "display": "Röteln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "rotavirus_infektion",
+            "display": "Rotavirus-Infektion"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "scharlach",
+            "display": "Scharlach"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "windpocken",
+            "display": "Windpocken"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "chronische-krankheiten-vs",
+      "status": "draft",
+      "name": "ChronischeKrankheitenVS",
+      "title": "ValueSet für chronische Krankheiten",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/chronische-krankheiten-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "asthma",
+            "display": "Asthma bronchiale"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "rheuma",
+            "display": "Rheuma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "epilepsie",
+            "display": "Epilepsie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "adhs",
+            "display": "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "sonstiges",
+            "display": "Sonstige chronische Krankheiten"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "atopische-erkrankungen-vs",
+      "status": "draft",
+      "name": "AtopischeErkrankungenVS",
+      "title": "ValueSet für atopische/allergische Erkrankungen",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "atopische_allergische",
+            "display": "Atopische/Allergische Erkrankungen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "nahrungsmittel",
+            "display": "Nahrungsmittelallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "pollen",
+            "display": "Pollenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "hausstaubmilben",
+            "display": "Hausstaubmilbenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "schimmelpilze",
+            "display": "Schimmelpilzallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "tierhaare",
+            "display": "Tierhaarallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "medikamente",
+            "display": "Medikamentenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "sonstiges",
+            "display": "Sonstige atopische/allergische Erkrankungen"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-dauer-he-vs",
+      "status": "draft",
+      "name": "SEU_EF_DauerHEVS",
+      "title": "SEU_EF_Dauer ValueSet",
+      "description": "ValueSet, das verschiedene Dauern enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-dauer-he-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-he-cs",
+            "code": "unter_18_monate",
+            "display": "<18 Monate"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-he-cs",
+            "code": "18_monate_bis_3_jahre",
+            "display": "18 Mon. - 3 J."
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-he-cs",
+            "code": "ueber_3_jahre",
+            "display": ">3 Jahre"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-he-cs"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "title": "SEU Elternfragebogen Maximaldatensatz Hessen",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "0",
+      "type": "group",
+      "text": "(0) Schule & Vorgangsnummer",
+      "item": [
+        {
+          "linkId": "0.1",
+          "type": "string",
+          "text": "(0.1) Name der Schule",
+          "code": [
+            {
+              "code": "0.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "0.2",
+          "type": "string",
+          "text": "(0.2) Vorgangsnummer",
+          "code": [
+            {
+              "code": "0.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "1",
+      "text": "(1) Personenbezogene Daten Kind",
+      "item": [
+        {
+          "linkId": "1.1",
+          "type": "string",
+          "text": "(1.1) Nachname des Kindes",
+          "code": [
+            {
+              "code": "1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.2",
+          "type": "string",
+          "text": "(1.2) Vorname des Kindes",
+          "code": [
+            {
+              "code": "1.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.3",
+          "type": "date",
+          "text": "(1.3) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthdate"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.4",
+          "type": "choice",
+          "text": "(1.4) Staatsangehörigkeit",
+          "code": [
+            {
+              "code": "1.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "required": true
+        },
+        {
+          "linkId": "1.5",
+          "type": "choice",
+          "text": "(1.5) Geburtsland",
+          "code": [
+            {
+              "code": "1.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "required": true
+        },
+        {
+          "linkId": "1.6",
+          "type": "boolean",
+          "text": "(1.6) In Deutschland geboren",
+          "code": [
+            {
+              "code": "1.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.6.1",
+          "type": "date",
+          "text": "(1.6.1) Seit wann wohnt das Kind in Deutschland?",
+          "code": [
+            {
+              "code": "1.6.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.6",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.8",
+          "type": "choice",
+          "text": "(1.8) Geschlecht",
+          "code": [
+            {
+              "code": "1.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#GenderDEVS",
+          "required": true
+        },
+        {
+          "linkId": "1.9",
+          "type": "string",
+          "text": "(1.9) PLZ",
+          "code": [
+            {
+              "code": "1.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.10",
+          "type": "string",
+          "text": "(1.10) Wohnort",
+          "code": [
+            {
+              "code": "1.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.11",
+          "type": "string",
+          "text": "(1.11) Straße",
+          "code": [
+            {
+              "code": "1.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.11a",
+          "type": "string",
+          "text": "(1.11a) Hausnummer",
+          "code": [
+            {
+              "code": "1.11a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "type": "group",
+      "text": "(2) Personenbezogene Daten Personenberechtigter",
+      "code": [
+        {
+          "code": "2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "repeats": true,
+      "item": [
+        {
+          "answerValueSet": "#GenderDEVS",
+          "linkId": "2.1",
+          "type": "choice",
+          "text": "(2.1) Geschlecht",
+          "code": [
+            {
+              "code": "2.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.2",
+          "type": "string",
+          "text": "(2.2) Nachname",
+          "code": [
+            {
+              "code": "2.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.3",
+          "type": "string",
+          "text": "(2.3) Vorname",
+          "code": [
+            {
+              "code": "2.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.4",
+          "type": "string",
+          "text": "(2.4) PLZ",
+          "code": [
+            {
+              "code": "2.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "type": "string",
+          "text": "(2.5) Wohnort",
+          "code": [
+            {
+              "code": "2.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.6",
+          "type": "string",
+          "text": "(2.6) Straße",
+          "code": [
+            {
+              "code": "2.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.7",
+          "type": "string",
+          "text": "(2.7) Telefonnummer",
+          "code": [
+            {
+              "code": "2.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.8",
+          "type": "string",
+          "text": "(2.8) Email",
+          "code": [
+            {
+              "code": "2.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "linkId": "2.9",
+          "type": "choice",
+          "text": "(2.9) Staatsangehörigkeit",
+          "code": [
+            {
+              "code": "2.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "linkId": "2.10",
+          "type": "choice",
+          "text": "(2.10) Herkunftsland",
+          "code": [
+            {
+              "code": "2.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.12",
+          "type": "date",
+          "text": "(2.12) Geburtsdatum",
+          "code": [
+            {
+              "code": "2.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "type": "group",
+      "text": "(3) Familiendaten",
+      "code": [
+        {
+          "code": "3",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "3.1",
+          "type": "integer",
+          "text": "(3.1) Anzahl der Geschwister",
+          "code": [
+            {
+              "code": "3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "3.1.1",
+          "type": "group",
+          "text": "(3.1.1) Details Geschwister",
+          "code": [
+            {
+              "code": "3.1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "3.1",
+              "operator": ">",
+              "answerInteger": 0
+            }
+          ],
+          "item": [
+            {
+              "linkId": "3.1.1.1",
+              "type": "date",
+              "text": "(3.1.1.1) Geburtsdatum des Geschwisters",
+              "code": [
+                {
+                  "code": "3.1.1.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "type": "group",
+          "text": "(3.2) Familiäre Vorgeschichte",
+          "code": [
+            {
+              "code": "3.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "3.2.5",
+              "type": "choice",
+              "text": "(3.2.5) Chronische Erkrankung",
+              "code": [
+                {
+                  "code": "3.2.5",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#chronische-krankheiten-vs",
+              "repeats": true,
+              "item": [
+                {
+                  "enableWhen": [
+                    {
+                      "question": "3.2.5",
+                      "operator": "=",
+                      "answerCoding": {
+                        "code": "sonstiges",
+                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
+                      }
+                    }
+                  ],
+                  "linkId": "3.2.5.1",
+                  "type": "string",
+                  "text": "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?",
+                  "code": [
+                    {
+                      "code": "3.2.5.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "type": "group",
+      "text": "(4) Kinderbetreuung",
+      "code": [
+        {
+          "code": "4",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "4.0b",
+          "type": "boolean",
+          "text": "(4.0b) Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?",
+          "code": [
+            {
+              "code": "4.0b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "4.1d",
+          "type": "choice",
+          "text": "(4.1d) Dauer Besuch Kita/Krippe",
+          "code": [
+            {
+              "code": "4.1d",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HE"
+              }
+            }
+          ],
+          "answerValueSet": "#seu-ef-dauer-he-vs",
+          "required": true
+        },
+        {
+          "linkId": "4.6b",
+          "type": "string",
+          "text": "(4.6b) Name des Kindergartens",
+          "code": [
+            {
+              "code": "4.6b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.0b",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "type": "group",
+      "text": "(5) Schwangerschaft und Geburt",
+      "code": [
+        {
+          "code": "5",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "5.2",
+          "type": "integer",
+          "text": "(5.2) Geburtsgewicht (in Gramm)",
+          "code": [
+            {
+              "code": "5.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "g",
+                "system": "http://unitsofmeasure.org",
+                "display": "Gramm"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "5.6",
+          "type": "boolean",
+          "text": "(5.6) Auffälligkeit/Krankheit in der Schwangerschaft",
+          "code": [
+            {
+              "code": "5.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "type": "group",
+      "text": "(7) Entwicklung",
+      "code": [
+        {
+          "code": "7",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "7.11a",
+          "type": "boolean",
+          "text": "(7.11a) Auffälligkeit des Verhaltens",
+          "code": [
+            {
+              "code": "7.11a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "type": "group",
+      "text": "(8) Erkrankungen und gesundheitliche Einschränkungen",
+      "code": [
+        {
+          "code": "8",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "8.3",
+          "type": "boolean",
+          "text": "(8.3) Sehstörung vorhanden?",
+          "code": [
+            {
+              "code": "8.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.4",
+          "type": "boolean",
+          "text": "(8.4) Sprachstörung vorhanden?",
+          "code": [
+            {
+              "code": "8.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.5",
+          "type": "boolean",
+          "text": "(8.5) Schielbehandlung?",
+          "code": [
+            {
+              "code": "8.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.6",
+          "type": "boolean",
+          "text": "(8.6) Brillenträger?",
+          "code": [
+            {
+              "code": "8.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.9",
+          "type": "boolean",
+          "text": "(8.9) Schwere Hörstörung vorhanden?",
+          "code": [
+            {
+              "code": "8.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.12.g",
+          "type": "group",
+          "text": "(8.12.g) Infektionskrankheiten",
+          "code": [
+            {
+              "code": "8.12.g",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#InfektionsKrankheitVS",
+              "linkId": "8.12.g.1",
+              "type": "open-choice",
+              "text": "(8.12.g.1) Infektionskrankheit",
+              "code": [
+                {
+                  "code": "8.12.g.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.15",
+          "type": "boolean",
+          "text": "(8.15) Krankenhausaufenthalt",
+          "code": [
+            {
+              "code": "8.15",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "8.15.1",
+              "type": "string",
+              "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
+              "code": [
+                {
+                  "code": "8.15.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.15",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#atopische-erkrankungen-vs",
+          "linkId": "8.16a",
+          "type": "choice",
+          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "code": [
+            {
+              "code": "8.16a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "8.16a.1",
+              "type": "string",
+              "text": "(8.16a.1) Welche sonstigen Allergien?",
+              "code": [
+                {
+                  "code": "8.16a.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.16a",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "sonstiges",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.23",
+          "type": "boolean",
+          "text": "(8.23) Regelmäßige Medikamenteneinnahme",
+          "code": [
+            {
+              "code": "8.23",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "8.23.1",
+          "type": "string",
+          "text": "(8.23.1) Welches Medikament",
+          "code": [
+            {
+              "code": "8.23.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "8.23",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "repeats": true
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "type": "group",
+      "text": "(9) Förderungen",
+      "code": [
+        {
+          "code": "9",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "9.2",
+          "type": "choice",
+          "text": "(9.2) Sprachtherapie",
+          "code": [
+            {
+              "code": "9.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+          "required": true
+        },
+        {
+          "linkId": "9.3",
+          "type": "choice",
+          "text": "(9.3) Frühförderung",
+          "code": [
+            {
+              "code": "9.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+          "required": true
+        },
+        {
+          "linkId": "9.4",
+          "type": "choice",
+          "text": "(9.4) Ergotherapie",
+          "code": [
+            {
+              "code": "9.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+          "required": true
+        },
+        {
+          "linkId": "9.6",
+          "type": "choice",
+          "text": "(9.6) Physiotherapie",
+          "code": [
+            {
+              "code": "9.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+          "required": true
+        },
+        {
+          "linkId": "9.9",
+          "type": "choice",
+          "text": "(9.9) Integrative Betreuung",
+          "code": [
+            {
+              "code": "9.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+          "required": true
+        },
+        {
+          "linkId": "9.10",
+          "type": "string",
+          "text": "(9.10) Sonstige Förderung",
+          "code": [
+            {
+              "code": "9.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "type": "group",
+      "text": "(11) Arzt",
+      "item": [
+        {
+          "linkId": "11.2",
+          "type": "string",
+          "text": "(11.2) Name Kinderarzt",
+          "code": [
+            {
+              "code": "11.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "11.3",
+          "type": "string",
+          "text": "(11.3) Name Facharzt",
+          "code": [
+            {
+              "code": "11.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "12",
+      "type": "group",
+      "text": "(12) Sonstiges",
+      "item": [
+        {
+          "linkId": "12.4",
+          "type": "boolean",
+          "text": "(12.4) KISS Sprachscreening",
+          "code": [
+            {
+              "code": "12.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "12.8",
+          "type": "text",
+          "text": "(12.8) Sportart und Verein",
+          "code": [
+            {
+              "code": "12.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.9",
+          "type": "boolean",
+          "text": "(12.9) Schwimmfähig",
+          "code": [
+            {
+              "code": "12.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.10",
+          "type": "boolean",
+          "text": "(12.10) Seepferdchenabzeichen",
+          "code": [
+            {
+              "code": "12.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

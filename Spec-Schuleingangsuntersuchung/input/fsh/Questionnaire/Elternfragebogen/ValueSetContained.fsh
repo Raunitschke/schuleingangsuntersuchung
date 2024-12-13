@@ -2386,6 +2386,30 @@ Description: "ValueSet, das verschiedene Bildungsabschlüsse enthält."
 * ^expansion.contains[=].code = #abitur_fachhochschulreife_fachabitur
 * ^expansion.contains[=].display = "Abitur, Fachhochschulreife, Fachabitur"
 
+CodeSystem: SEU_EF_BildungsabschlussBWCS
+Id: seu-ef-bildungsabschluss-bwcs
+Title: "SEU_EF_BildungsabschlussBWCS CodeSystem"
+Description: "CodeSystem für die Angabe des Bildungsabschlusses."
+* #weniger10Klasse "Weniger als 10. Klasse"
+* #10Klasse "10. Klasse"
+* #AbiturFH "Abitur / FH-Reife"
+
+ValueSet: SEU_EF_BildungsabschlussBWVS
+Id: seu-ef-bildungsabschluss-bwvs
+Title: "SEU_EF_BildungsabschlussBWVS ValueSet"
+Description: "ValueSet, das verschiedene Bildungsabschlüsse enthält."
+* include codes from system SEU_EF_BildungsabschlussBWCS
+* ^expansion.timestamp = "2024-12-09T10:35:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_BildungsabschlussBWCS)
+* ^expansion.contains[=].code = #weniger10Klasse
+* ^expansion.contains[=].display = "Weniger als 10. Klasse"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBWCS)
+* ^expansion.contains[=].code = #10Klasse
+* ^expansion.contains[=].display = "10. Klasse"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBWCS)
+* ^expansion.contains[=].code = #AbiturFH
+* ^expansion.contains[=].display = "Abitur / FH-Reife"
+
 CodeSystem: SEU_EF_FrequenzCS
 Id: seu-ef-frequenz-cs
 Title: "SEU_EF_Frequenz CodeSystem"

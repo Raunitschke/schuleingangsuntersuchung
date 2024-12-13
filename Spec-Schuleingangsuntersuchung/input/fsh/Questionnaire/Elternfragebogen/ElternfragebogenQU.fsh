@@ -51,6 +51,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_FrequenzVS
 * contained[+] = SEU_EF_DauerHEVS
 * contained[+] = icd10gm-2024
+* contained[+] = SEU_EF_BildungsabschlussBBVS
+* contained[+] = SEU_EF_BildungsabschlussBWVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -224,6 +226,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
+    * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
+  * item[+]
     * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
   * item[+]
     * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die KiTa?, #DE-SL)
@@ -270,6 +274,8 @@ Description: "Elternbefragung"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine Kita?]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -411,6 +417,8 @@ Description: "Elternbefragung"
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
+  * item[+]
+    * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
@@ -786,7 +794,7 @@ Description: "Elternbefragung"
         * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
         * insert enableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
     * item[+]
-      * insert addItemWithSource(9.2e, #choice, [[Andere]], #DE-BW)
+      * insert addItemWithSource(9.2e, #choice, [[Andere Beratungs-, Förder- oder Heilmaßnahmen]], #DE-BW)
       * answerValueSet = Canonical(JaNeinWartelisteVS)
       * item[+]
         * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
@@ -842,13 +850,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(10.2, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
   * item[+]
-    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BW)
+    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
     * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
   * item[+]
-    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
     * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
@@ -928,11 +936,20 @@ Description: "Elternbefragung"
 * item[+]
   * insert addGroup(13, Informationen Eltern)
   * item[+]
+    * insert addItemWithSource(13.0, #choice, [[Geschlecht 1. Elternteil]], #DE-BW)
+    * answerValueSet = Canonical(GenderDEVS)
+  * item[+]
+    * insert addItemWithSource(13.0a, #choice, [[Geschlecht 2. Elternteil]], #DE-BW)
+    * answerValueSet = Canonical(GenderDEVS)
+  * item[+]
     * insert addItem(13.1, #choice, Schulabschluss 1. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
     * insert addItemWithSource(13.1a, #choice, Schulabschluss 1. Elternteil, #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
+  * item[+]
+    * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
@@ -940,11 +957,14 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.2a, #choice, Schulabschluss 2. Elternteil, #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
+    * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
+  * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)    
+    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
     * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)  
+    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
     * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
     * answerValueSet = Canonical(ErwerbsstatusVS)
@@ -953,7 +973,7 @@ Description: "Elternbefragung"
     * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
-    * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)  
+    * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)
   * item[+]
     * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
     * answerValueSet = Canonical(ErwerbsstatusVS)
@@ -961,7 +981,7 @@ Description: "Elternbefragung"
     * insert addItem(13.6.1, #text, Grund der Erwerbslosigkeit)
     * insert enableWhenCode(13.6, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
-    * insert addItemWithSource(13.6a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
+    * insert addItemWithSource(13.6a, #choice, Berufstätigkeit 2. Elternteil, #DE-BW)
     * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS) 
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
@@ -986,3 +1006,11 @@ Description: "Elternbefragung"
     * insert addItem(13.15, #boolean, Arbeitet der 1. Elternteil im Schichtdienst?)
   * item[+]
     * insert addItem(13.16, #boolean, Arbeitet der 2. Elternteil im Schichtdienst?)
+  * item[+]
+    * insert addItemWithSource(13.17, #boolean, [[Deutsche Staatsangehörigkeit? Elternteil 1]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(13.18, #boolean, [[Deutsche Staatsangehörigkeit? Elternteil 2]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(13.19, #boolean, [[in Deutschland geboren? Elternteil 1]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(13.20, #boolean, [[in Deutschland geboren? Elternteil 2]], #DE-BW)

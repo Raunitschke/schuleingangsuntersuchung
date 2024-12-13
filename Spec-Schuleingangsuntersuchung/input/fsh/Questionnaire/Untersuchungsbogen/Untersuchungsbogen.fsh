@@ -65,10 +65,16 @@ Description: "Untersuchungsbogen"
 * contained[+] = SEU_UB_EinschulungVS
 * contained[+] = SEU_UB_ImpfschemaVS
 * contained[+] = SEU_UB_VerwandtePersonDeutschkenntnisVS
-
+* contained[+] = JaNeinVorgelegtVS
 * id = "SEU-Untersuchungsbogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen"
 * title = "SEU Untersuchungsbogen Maximaldatensatz"
+* text.status = #generated
+* text.div = """
+<div xmlns="http://www.w3.org/1999/xhtml">
+  Dieser Questionnaire ist zur Befüllung eines Arztes des Gesundheitsamtes bei der Schuleingangsuntersuchung vorgesehen.
+</div>
+"""
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 
